@@ -5,7 +5,7 @@ RUN apt update \
     && rm -rf /var/lib/apt/lists/* \
     && apt clean
 
-RUN useradd -ms /bin/bash 1001
+RUN useradd -ms /bin/bash notanadmin
 
-USER 1001
-WORKDIR /home/1001
+USER notanadmin
+WORKDIR /home/notanadmin
