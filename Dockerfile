@@ -2,7 +2,8 @@ FROM alpine
 
 RUN apk add --no-cache \ 
         openssh \
-    && ssh-keygen -A
+    && ssh-keygen -A \
+    && chmod 640 /etc/ssh/*
 
 EXPOSE 22
 
