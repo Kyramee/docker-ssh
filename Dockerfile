@@ -2,5 +2,5 @@ FROM debian
 RUN apt-get update \
     && apt-get install -y openssh-client
 
-ENTRYPOINT ["ssh"]
-CMD ["ssh"]
+ENTRYPOINT ["/bin/sh"]
+CMD ["/bin/sh"]
